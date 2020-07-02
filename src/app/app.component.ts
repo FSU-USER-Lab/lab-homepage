@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'lab-homepage';
+  title = 'USER Lab';
+  public isMenuOpen: boolean = false;
+
+  public onSidenavClick(): void {
+    this.isMenuOpen = false;
+  }
+
 }
