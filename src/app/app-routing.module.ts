@@ -6,7 +6,7 @@ import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
 import { NewsComponent } from './news/news.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PublicationsComponent } from './publications/publications.component';
 
@@ -21,7 +21,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '**', component: PagenotfoundComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

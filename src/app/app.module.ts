@@ -12,7 +12,7 @@ import { MembersComponent } from './members/members.component';
 import { FaqComponent } from './faq/faq.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     MembersComponent,
     FaqComponent,
     ProjectsComponent,
-    PagenotfoundComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
