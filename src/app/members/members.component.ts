@@ -12,4 +12,20 @@ export class MembersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  current_students = [
+    'Ciera',
+    'McInnes-Taylor, Marlan',
+    'Moran, Jack',
+    'Murdjeff, Alexa'
+
+  ];
+
+  former_students = [
+    'Dulay, Haley',
+    'Feanny, Nick',
+    'G., Diego',
+    'Hosfeld, Luis',
+    'Parmer, Samuel',
+    'Taylor, Quinton'
+  ];
 }

@@ -1,1 +1,49 @@
-<p>members works!</p>
+<h1 class="text-center mb-5">Members</h1>
+
+<div class="row justify-content-center">
+	<div class="col-sm-2">
+		<h2>Primary Investigator</h2>
+	</div>
+	<div class="col-sm-6">
+		<div class="card bg-transparent border-0" >
+			<div class="card-body pt-0">
+				<h3 class="card-title">Dr. Chris Mills</h3>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+					content.</p>
+				<a href="https://chrisryanmills.com" target="_blank" rel="external" class="btn btn-secondary mx-3"><i class="fas fa-globe mr-2"></i>Homepage</a>
+				<a href="mailto:crmills@fsu.edu" class="btn btn-secondary mx-3"><i class="far fa-envelope mr-2"></i>Contact</a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row justify-content-center">
+	<div class="col-sm-2">
+		<h2>Current Students</h2>
+	</div>
+	<div class="col-sm-6">
+		<div class="card bg-transparent border-0">
+			<div class="card-body pt-0">
+				<p class="lead mb-1" *ngFor="let student of current_students">
+					{{ student }}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="row justify-content-center">
+	<div class="col-sm-2">
+		<h2>Former Students</h2>
+	</div>
+	<div class="col-sm-6">
+		<div class="card bg-transparent border-0">
+			<div class="card-body pt-0">
+				<p class="mb-1" *ngFor="let student of former_students">
+					{{ student }}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
