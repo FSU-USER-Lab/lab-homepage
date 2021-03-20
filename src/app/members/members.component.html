@@ -10,8 +10,8 @@
 				<h3 class="card-title">Dr. Chris Mills</h3>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
 					content.</p>
-				<a href="https://chrisryanmills.com" target="_blank" rel="external" class="btn btn-secondary mx-3"><i class="fas fa-globe mr-2"></i>Homepage</a>
-				<a href="mailto:crmills@fsu.edu" class="btn btn-secondary mx-3"><i class="far fa-envelope mr-2"></i>Contact</a>
+				<a href="https://chrisryanmills.com" target="_blank" rel="external" class="btn btn-dark mx-3"><i class="fas fa-globe mr-2"></i>Homepage</a>
+				<a href="mailto:crmills@fsu.edu" class="btn btn-dark mx-3"><i class="far fa-envelope mr-2"></i>Contact</a>
 				
 			</div>
 		</div>
@@ -26,7 +26,7 @@
 		<div class="card bg-transparent border-0">
 			<div class="card-body pt-0">
 				<p class="lead mb-1" *ngFor="let student of current_students">
-					{{ student }}
+					{{ student.last_name }}, {{ student.first_name }}
 				</p>
 			</div>
 		</div>
@@ -40,8 +40,8 @@
 	<div class="col-sm-6">
 		<div class="card bg-transparent border-0">
 			<div class="card-body pt-0">
-				<p class="mb-1" *ngFor="let student of former_students">
-					{{ student }}
+				<p class="mb-1" *ngFor="let student of past_students">
+					{{ student.last_name }}, {{ student.first_name }}
 				</p>
 			</div>
 		</div>

@@ -1,4 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import current_membersData from '../../assets/current_students.json';
+import past_membersData from '../../assets/past_students.json';
+
+interface CurrentMember {
+  first_name: String;
+  last_name: String;
+  grade: String;
+}
+
+interface PastMember {
+  first_name: String;
+  last_name: String;
+}
 
 @Component({
   selector: 'app-members',
@@ -12,20 +25,7 @@ export class MembersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  current_students = [
-    'Ciera',
-    'McInnes-Taylor, Marlan',
-    'Moran, Jack',
-    'Murdjeff, Alexa'
+  current_students: CurrentMember[] = current_membersData;
+  past_students: PastMember[] = past_membersData;
 
-  ];
-
-  former_students = [
-    'Dulay, Haley',
-    'Feanny, Nick',
-    'G., Diego',
-    'Hosfeld, Luis',
-    'Parmer, Samuel',
-    'Taylor, Quinton'
-  ];
 }
